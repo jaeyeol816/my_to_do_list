@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 #PageTitle {
   float: left;
   padding: 20px;
@@ -31,3 +35,7 @@
   height: 50px;
 }
 
+#ListArea {
+  width: 500px;
+  margin: 30px auto;
+}
