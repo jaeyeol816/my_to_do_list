@@ -5,8 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My To Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="execute.js"></script>
 </head>
 <body>
-  
+  <header>
+    <div id="PageTitle">
+      <h1>TO-DO-LIST</h1>
+    </div>
+    <div id="DarkMode">
+      <input type="radio" name="selectMode" value="light" id="light">
+      <label for="light">라이트 모드</label>
+      <input type="radio" name="selectMode" value="dark" id="dark">
+      <label for="dark">다크 모드</label>
+    </div>
+  </header>
+  <div id="InputArea">
+    <form>
+      <input type="text" id="appendingData" autofocus placeholder="리스트에 항목 추가">
+      <button type="submit" id="summitButton">+</button>
+    </form>
+  </div>
+  <div id="ListArea">
+
+  </div>
+
 </body>
 </html>
