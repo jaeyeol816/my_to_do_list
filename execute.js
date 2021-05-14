@@ -30,4 +30,23 @@ function addList() {
 
   appendingData.value="";
 
-}
+
+  //////////////////////////////////////////////
+  //여기부터 리스트 삭제 관련 코드 (왜 이것이 addList함수 안에 있어야 될까?)
+  
+  let itemsButtons = document.querySelectorAll("li > button");
+  console.log("ok");  //testcode
+
+  for (let i = 0; i < itemsButtons.length; i++) {   //각각의 X버튼에 이벤트리스너 달기
+    itemsButtons[i].addEventListener("click", delNode);
+  }
+
+  function delNode() {
+    let liNode = this.parentNode.parentNode;
+    liNode.removeChild(this.parentNode);
+  }
+} //addList
+
+
+
+
