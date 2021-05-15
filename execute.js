@@ -7,7 +7,7 @@ function addList() {
   let newItem = document.createElement("li");   //새로운 li요소 생성
 
   let appendingData = document.querySelector("#appendingData");   //폼의 텍스트 필드 가져오기
-  let newText = document.createTextNode(appendingData.value); //가져온 텍스트 필드의 값을 새 텍스트 노드로 만든다.
+  let newText = document.createTextNode("      "+appendingData.value); //가져온 텍스트 필드의 값을 새 텍스트 노드로 만든다.
 
   
   let newCheckBox = document.createElement("input");  //체크박스로 쓸 input요소 생성

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,51 +10,113 @@ ul {
   list-style: none;
 }
 
+body {
+  width: 100vw;
+}
+
+#header {
+  width: 100vw;
+  background-color: #b64fc8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 #PageTitle {
-  float: left;
+  background-color: #b64fc8;
+  color: black;
   padding: 20px;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 #DarkMode {
-  float: right;
+  background-color: #b64fc8; 
   padding: 20px;
+  font-size: 5px;
 }
 
 #InputArea {
   clear: both;
-  margin: 15px auto;
-  width: 500px;
-  height: 50px;
+  margin: 0px auto;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea80fc;
 }
 
 #appendingData {
-  width: 80%;
+  width: 75vw;
   height: 50px;
+  background-color: #ea80fc;
+  border: 2px solid black;
+  font-size: 20px;
 }
 
 #summitButton {
-  width: 15%;
+  width: 15vw;
   height: 50px;
+  background-color: #ea80fc;
+  border: 2px solid black;
+  border-radius: 0px;
+  color: black;
+  align-self: center;
+  font-size: 20px;
+}
+
+#summitButton:hover {
+  background-color: #ffb2ff;
+  cursor: pointer;
+}
+
+#summitButton:active {
+  background-color: #bb4fc8;
 }
 
 #ListArea {
-  width: 500px;
-  margin: 30px auto;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 0 0 0;
+  background-color: #f3e5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #ItemList {
-  width: 500px;
-
+  width: 90vw;
 }
 
 #ItemList > li {
-  width: 500px;
+  width: 100%;
   height: 50px;
-  border: 1px solid black;
+  margin: 10px 0 0 0;
+  padding: 0 0 10px 0;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+  font-size: 25px;
 }
 
 #ItemList > li > button {
   float: right;
-  width: 15%;
-  height: 50px;
+  width: 14.5vw;
+  height: 40px;
+  background-color: #f3e5f5;
+  border: 2px solid black;
+  border-radius: 0px;
+  color: black;
+}
+
+#ItemList > li > button:hover {
+  background-color: #ffb2ff;
+  cursor: pointer;
+}
+
+#ItemList > li > button:active {
+  background-color: #bb4fc8;
 }
