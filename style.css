@@ -34,6 +34,7 @@ body {
   background-color: #b64fc8; 
   padding: 20px;
   font-size: 5px;
+  display: none;  /* 임시적으로 설정 */
 }
 
 #InputArea {
